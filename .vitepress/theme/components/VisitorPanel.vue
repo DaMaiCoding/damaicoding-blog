@@ -3,19 +3,15 @@
     <div class="container">
       <section class="grid">
         <span class="text">
-          本站总访问量
-          <span id="busuanzi_value_site_pv" class="font-bold">--</span> 次
+          总页面访问量
+          <span id="busuanzi_value_page_pv" class="font-bold">--</span> 次
         </span>
-        <img
-          src="/heart.gif"
-          alt="heart"
-          class="heart-img"
-          width="50"
-          height="50"
-          @click="onLinkUmiHandle"
-        />
         <span class="text">
-          本站访客数
+          本站总访问量
+          <span id="busuanzi_value_site_uv" class="font-bold">--</span> 人次
+        </span>
+        <span class="text">
+          本站总访客数
           <span id="busuanzi_value_site_uv" class="font-bold">--</span> 人次
         </span>
       </section>
