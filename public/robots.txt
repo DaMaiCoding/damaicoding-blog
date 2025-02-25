@@ -3,6 +3,6 @@ Allow: /
 Allow: /pages/
 Allow: /posts/
 
-Sitemap: https://blog.imsyy.top/sitemap.xml
+Sitemap: https://damaicoding.fun/sitemap.xml
 
-# Algolia-Crawler-Verif: 8FBA7EF2B00DD340
+# Algolia-Crawler-Verif: 38840EFA6F5DE32F
