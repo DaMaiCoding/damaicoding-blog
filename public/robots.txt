@@ -4,3 +4,5 @@ Allow: /pages/
 Allow: /posts/
 
 Sitemap: https://blog.imsyy.top/sitemap.xml
+
+# Algolia-Crawler-Verif: 8FBA7EF2B00DD340

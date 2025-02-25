@@ -26,9 +26,6 @@ posts/*
 !posts/2024/1010.md
 
 # Editor directories and files
-.vscode/*
-.vscode
-!.vscode/extensions.json
 .idea
 *.suo
 *.ntvs*
