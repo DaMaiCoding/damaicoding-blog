@@ -5,8 +5,8 @@
     </template>
     <template #doc-after>
       <div style="margin-top: 24px">
-        <Giscus :key="page.filePath" repo="ChinaCarlos/carlos-blog" repo-id="R_kgDOMq5AVg" category="Show and tell"
-          category-id="DIC_kwDOMq5AVs4CiHAN" mapping="pathname" strict="0" reactions-enabled="1" emit-metadata="0"
+        <Giscus :key="page.filePath" repo="DaMaiCoding/damaicoding-blog" repo-id="R_kgDON_Flnw" category="Show and tell"
+          category-id="DIC_kwDON_Fln84CnTmv" mapping="pathname" strict="0" reactions-enabled="1" emit-metadata="0"
           input-position="bottom" lang="zh-CN" crossorigin="anonymous" :theme="isDark ? 'dark' : 'light'" />
       </div>
     </template>
