@@ -4,15 +4,15 @@
       <section class="grid">
         <span class="text">
           总页面访问量
-          <span id="busuanzi_value_page_pv" class="font-bold">--</span> 次
+          <span id="busuanzi_value_page_pv" class="data-panel-busuanzi-value" @click="onLinkUmiHandle">--</span> 次
         </span>
         <span class="text">
           本站总访问量
-          <span id="busuanzi_value_site_uv" class="font-bold">--</span> 人次
+          <span id="busuanzi_value_site_uv" class="data-panel-busuanzi-value" @click="onLinkUmiHandle">--</span> 次
         </span>
         <span class="text">
           本站总访客数
-          <span id="busuanzi_value_site_uv" class="font-bold">--</span> 人次
+          <span id="busuanzi_value_site_uv" class="data-panel-busuanzi-value" @click="onLinkUmiHandle">--</span> 人次
         </span>
       </section>
     </div>
@@ -24,7 +24,7 @@ import { inBrowser } from "vitepress";
 const onLinkUmiHandle = () => {
   if (inBrowser) {
     window.open(
-      "https://us.umami.is/share/Y2BYxCAm7R0DG2Xi/carlosme.fun",
+      "https://cloud.umami.is/share/VR6KiYPELpPLZGGM/damaicoding.fun",
       "_blank"
     );
   }
@@ -67,5 +67,11 @@ const onLinkUmiHandle = () => {
 .text {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.data-panel-busuanzi-value {
+  font-weight: bold;
+  color: #7759f1;
+  cursor: pointer;
 }
 </style>

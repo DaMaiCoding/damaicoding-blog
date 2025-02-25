@@ -28,7 +28,7 @@ export default defineConfig({
       "script",
       {
         src: "https://cloud.umami.is/script.js",
-        "data-website-id": "a389c094-c38f-4892-a805-600abb846e29",
+        "data-website-id": "e2f8a363-b49a-49e7-8bcf-e3f11e1b2995",
       },
     ],
   ],
