@@ -18,9 +18,10 @@ const { detypeMarkdownPlugin, detypeVitePlugin } = createDetypePlugin();
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/",
   srcDir: "docs",
-  title: "China Carlos's Blog",
-  description: "Carlos's Blog Web Site",
+  title: "DaMainCoding's Blog",
+  description: "DaMainCoding's Blog Web Site",
   ignoreDeadLinks: true,
   head: [
     ["link", { rel: "icon", href: "/blog.svg" }],

@@ -8,7 +8,7 @@
         </span>
         <span class="text">
           本站总访问量
-          <span id="busuanzi_value_site_uv" class="data-panel-busuanzi-value" @click="onLinkUmiHandle">--</span> 次
+          <span id="busuanzi_value_site_pv" class="data-panel-busuanzi-value" @click="onLinkUmiHandle">--</span> 次
         </span>
         <span class="text">
           本站总访客数
