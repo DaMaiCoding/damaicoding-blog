@@ -3,7 +3,7 @@ export const themeConfig = {
   // 站点信息
   siteMeta: {
     // 站点标题
-    title: "Curve",
+    title: "DaMaiCoding Blog",
     // 站点描述
     description: "Hello World",
     // 站点logo
@@ -14,7 +14,7 @@ export const themeConfig = {
     lang: "zh-CN",
     // 作者
     author: {
-      name: "Admin",
+      name: "DaMaiCoding",
       cover: "/images/logo/logo.webp",
       email: "114514@gmail.com",
       link: "https://www.imsyy.top",
@@ -163,17 +163,17 @@ export const themeConfig = {
       name: "服务",
       list: [
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/6613465358077.png",
+          icon: "/images/logo/logo.webp",
           name: "起始页",
           url: "https://nav.imsyy.top/",
         },
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/661346d418ad7.png",
+          icon: "/images/logo/logo.webp",
           name: "今日热榜",
           url: "https://hot.imsyy.top/",
         },
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/66134722586fa.png",
+          icon: "/images/logo/logo.webp",
           name: "站点监测",
           url: "https://status.imsyy.top/",
         },
@@ -188,12 +188,12 @@ export const themeConfig = {
           url: "https://github.com/imsyy/vitepress-theme-curve",
         },
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/07/66124f5fc63c8.png",
+          icon: "/images/logo/logo.webp",
           name: "SPlayer",
           url: "https://github.com/imsyy/SPlayer",
         },
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/6613465358077.png",
+          icon: "/images/logo/logo.webp",
           name: "Snavigation",
           url: "https://github.com/imsyy/SPlayer",
         },
@@ -203,12 +203,12 @@ export const themeConfig = {
           url: "https://github.com/imsyy/home",
         },
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/661346d418ad7.png",
+          icon: "/images/logo/logo.webp",
           name: "DailyHotApi",
           url: "https://github.com/imsyy/DailyHotApi",
         },
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/66134722586fa.png",
+          icon: "/images/logo/logo.webp",
           name: "site-status",
           url: "https://github.com/imsyy/site-status",
         },
@@ -224,14 +224,14 @@ export const themeConfig = {
       // 是否开启封面显示 文章不设置cover封面会显示异常，可以设置下方默认封面
       enable: true,
       // 封面布局方式: left | right | both
-      coverLayout: 'both',
+      coverLayout: "both",
       // 默认封面(随机展示)
       defaultCover: [
-        'https://example.com/1.avif',
-        'https://example.com/2.avif',
-        'https://example.com/3.avif'
-      ]
-    }
+        "https://example.com/1.avif",
+        "https://example.com/2.avif",
+        "https://example.com/3.avif",
+      ],
+    },
   },
   // 页脚信息
   footer: {
@@ -358,7 +358,7 @@ export const themeConfig = {
       // 倒计时日期
       data: {
         name: "春节",
-        date: "2025-01-29",
+        date: "2026-02-17",
       },
     },
     // 站点数据
@@ -380,9 +380,9 @@ export const themeConfig = {
   // 音乐播放器
   // https://github.com/imsyy/Meting-API
   music: {
-    enable: false,
+    enable: true,
     // url
-    url: "https://api-meting.example.com",
+    url: "https://meting-dd.2333332.xyz/api",
     // id
     id: 9379831714,
     // netease / tencent / kugou
@@ -393,7 +393,7 @@ export const themeConfig = {
   // 搜索
   // https://www.algolia.com/
   search: {
-    enable: false,
+    enable: true,
     appId: "",
     apiKey: "",
   },
