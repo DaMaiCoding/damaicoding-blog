@@ -47,7 +47,7 @@ export default defineConfig({
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "首页", link: "/" },
+      { text: "home", link: "/" },
       { text: "我的博客", link: "/blog/vitepress" },
       {
         text: "前端面试",

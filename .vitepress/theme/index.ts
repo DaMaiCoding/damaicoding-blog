@@ -18,7 +18,7 @@ import "vitepress-plugin-nprogress/lib/css/index.css";
 import "virtual:group-icons.css";
 import "@vitepress-code-preview/container/dist/style.css";
 import "vitepress-plugin-sandpack/dist/style.css";
-import "./style.css";
+import "./style/style.css";
 
 export default {
   extends: DefaultTheme,
