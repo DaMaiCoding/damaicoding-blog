@@ -52,7 +52,7 @@ export default defineConfig({
       {
         text: "前端面试",
         items: [
-          { text: "我的掘金", link: "https://juejin.cn/user/3544481218693597" },
+          { text: "我的掘金", link: "https://juejin.cn/user/2368772393149325" },
           { text: "HTML", link: "/interview/HTML/index" },
           { text: "CSS", link: "/interview/CSS/prev" },
           { text: "JavaScript", link: "/interview/JavaScript/prev" },
@@ -66,10 +66,10 @@ export default defineConfig({
           { text: "微前端", link: "/interview/MicroFrontEnd/index" },
         ],
       },
-      { text: "关于我", link: "/pages/about" },
+      { text: "关于我", link: "https://github.com/DaMaiCoding" },
       {
         text: "博客统计",
-        link: "https://us.umami.is/share/Y2BYxCAm7R0DG2Xi/carlosme.fun",
+        link: "https://cloud.umami.is/share/VR6KiYPELpPLZGGM/damaicoding.fun",
       },
     ],
 
@@ -85,7 +85,7 @@ export default defineConfig({
       next: "下一页",
     },
     // 社交链接
-    socialLinks: [{ icon: "github", link: "https://github.com/ChinaCarlos" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/DaMaiCoding" }],
     // 主题
     darkModeSwitchLabel: "深浅模式",
 
@@ -97,7 +97,7 @@ export default defineConfig({
     // 页脚
     footer: {
       message: "Released under the MIT License.",
-      copyright: "Copyright © 2023-present China Carlos",
+      copyright: "Copyright © 2025-present DaMaiCoding",
     },
   },
   markdown: {
