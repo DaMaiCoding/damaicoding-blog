@@ -91,7 +91,7 @@ export const getStatistics = async () => {
     总访问页数: data?.pageviews?.value || 0,
     总访问量: data?.visits?.value || 0,
     总访问人数: data?.visitors?.value || 0,
-    跳出率: ((1 - data?.visitors?.value / data?.visits?.value)*100 || 0) + "%",
+    跳出率: ((1 - data?.visitors?.value / data?.visits?.value).toFixed(4)*100 || 0) + "%",
   };
   return statistics;
 };
