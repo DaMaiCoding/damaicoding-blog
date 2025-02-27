@@ -5,7 +5,7 @@
       <!-- 介绍 -->
       <div class="about-item hello">
         <span class="text1">你好，很高兴认识你👋</span>
-        <span class="text2 title2">我是 無名</span>
+        <span class="text2 title2">我是 大麦大麦</span>
         <span class="text3">是一名 前端开发工程师、独立开发者、博主</span>
       </div>
       <!-- 追求 -->
@@ -22,14 +22,8 @@
         <span class="tip">技能</span>
         <span class="title2">开启创造力</span>
         <div class="skills-list">
-          <a
-            v-for="(item, index) in skillsData"
-            :key="index"
-            :style="{ '--color': item.color }"
-            :href="item.link"
-            class="skills-item"
-            target="_blank"
-          >
+          <a v-for="(item, index) in skillsData" :key="index" :style="{ '--color': item.color }" :href="item.link"
+            class="skills-item" target="_blank">
             <div class="skills-logo">
               <i :class="`iconfont icon-${item.icon}`"></i>
             </div>
@@ -44,35 +38,27 @@
           <i>無限進步</i>
         </span>
         <div class="list">
-          <span class="list-item" style="--color: #357ef5">ZZRVTC · 计算机应用技术</span>
+          <span class="list-item" style="--color: #357ef5">HSTC · 计算机科学与技术</span>
           <span class="list-item" style="--color: #eb372a">FE · 前端开发工程师</span>
         </div>
-        <img
-          class="career-img"
-          src="https://pic.efefee.cn/uploads/2024/02/22/65d71db18bcf9.png"
-          alt="career"
-        />
       </div>
     </div>
     <div class="about-content" style="grid-template-columns: 3fr 2fr">
       <!-- 性格 -->
       <div class="about-item character" style="--color: #4298b4">
         <span class="tip">性格</span>
-        <span class="title2">物流师</span>
-        <span class="title2" style="color: var(--color)">ISTJ-A / ISTJ-T</span>
+        <span class="title2">建筑师</span>
+        <span class="title2" style="color: var(--color)">INTJ-A</span>
         <span class="more">
           在
           <a href="https://www.16personalities.com/ch/" target="_blank">16personalities</a>
           了解更多关于
-          <a href="https://www.16personalities.com/ch/istj-%E4%BA%BA%E6%A0%BC" target="_blank">
-            物流师
+          <a href="https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC" target="_blank">
+            建筑师
           </a>
         </span>
-        <img
-          src="https://pic.efefee.cn/uploads/2024/02/22/65d6bc7ae72ae.png"
-          alt="male"
-          class="male"
-        />
+        <img src="https://www.16personalities.com/static/images/types/headers/architect-desktop2.svg" alt="male"
+          class="male" />
       </div>
       <!-- 座右铭 -->
       <div class="about-item">
@@ -81,47 +67,12 @@
         <span class="title2">一丝不苟。</span>
       </div>
     </div>
-    <div class="about-content" style="grid-template-columns: 1fr 1fr">
-      <div
-        class="about-item like image"
-        style="
-          --color: #0c0e20;
-          background-image: url(https://pic.efefee.cn/uploads/2024/02/27/65dd812567723.webp);
-        "
-      >
-        <div class="image-content">
-          <span class="tip">关注偏好</span>
-          <span class="title2">数码科技</span>
-          <div class="image-desc">
-            <span class="left">手机、电脑及软硬件</span>
-          </div>
-        </div>
-      </div>
-      <div
-        class="about-item like image"
-        style="
-          --color: #7b3c25;
-          background-image: url(https://pic.efefee.cn/uploads/2024/02/27/65dd836099d16.webp);
-        "
-      >
-        <div class="image-content">
-          <span class="tip">音乐偏好</span>
-          <span class="title2">欧美、华语流行、纯音乐、ACG</span>
-          <div class="image-desc">
-            <span class="left">一起欣赏更多音乐</span>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="about-content" style="grid-template-columns: 2fr 3fr">
       <!-- 数据 -->
-      <div
-        class="about-item static image"
-        style="
+      <div class="about-item static image" style="
           --color: #0f1114;
-          background-image: url(https://pic.efefee.cn/uploads/2024/04/15/661c8fbf226d3.webp);
-        "
-      >
+          background-image: url(/images/common/star-sky.jpg);
+        ">
         <div class="image-content">
           <span class="tip">数据</span>
           <span class="title2">访问统计</span>
@@ -140,16 +91,14 @@
       </div>
       <!-- 信息 -->
       <div class="about-item child">
-        <div
-          class="about-item map image"
-          style="background-image: url(https://pic.efefee.cn/uploads/2024/04/15/661cbccc56af5.webp)"
-        >
-          <span class="position">我现在住在 <strong>中国，河南省</strong></span>
+        <div class="about-item map image"
+          style="background-image: url(/images/common/map.jpg)">
+          <span class="position">我现在住在 <strong>中国，广东省</strong></span>
         </div>
         <div class="about-item info">
           <div class="info-item">
             <span class="info-name">生于</span>
-            <span class="info-num" style="--color: #43a6c6">2001</span>
+            <span class="info-num" style="--color: #43a6c6">1996</span>
           </div>
           <div class="info-item">
             <span class="info-name">现在职业</span>
@@ -361,7 +310,7 @@ onMounted(() => {
           position: absolute;
           top: 20px;
           right: -10px;
-          height: 140%;
+          height: 80%;
           width: auto;
           transition: transform 0.5s;
           transform-origin: top center;

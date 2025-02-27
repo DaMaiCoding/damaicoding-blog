@@ -5,25 +5,25 @@ export const themeConfig = {
     // 站点标题
     title: "DaMaiCoding Blog",
     // 站点描述
-    description: "Hello World",
+    description: "分享技术与生活",
     // 站点logo
     logo: "/images/logo/logo.webp",
     // 站点地址
-    site: "https://blog.imsyy.top",
+    site: "https://damaicoding.fun",
     // 语言
     lang: "zh-CN",
     // 作者
     author: {
       name: "DaMaiCoding",
       cover: "/images/logo/logo.webp",
-      email: "114514@gmail.com",
-      link: "https://www.imsyy.top",
+      email: "mailto:damaicoding@qq.com",
+      link: "https://github.com/DaMaiCoding",
     },
   },
   // 备案信息
   icp: "萌ICP备114514号",
   // 建站日期
-  since: "2020-07-28",
+  since: "2025-02-24",
   // 每页文章数据
   postSize: 8,
   // inject
@@ -40,7 +40,7 @@ export const themeConfig = {
           rel: "alternate",
           type: "application/rss+xml",
           title: "RSS",
-          href: "https://blog.imsyy.top/rss.xml",
+          href: "https://damaicoding.fun/rss.xml",
         },
       ],
       // 预载 CDN
@@ -148,69 +148,19 @@ export const themeConfig = {
       name: "博客",
       list: [
         {
-          icon: "/images/logo/logo.webp",
+          icon: "/images/common/index.png",
           name: "主站",
           url: "/",
         },
-        {
-          icon: "/images/logo/logo.webp",
-          name: "博客镜像站",
-          url: "https://blog-backup.imsyy.top/",
-        },
       ],
     },
     {
-      name: "服务",
+      name: "开源项目",
       list: [
         {
-          icon: "/images/logo/logo.webp",
-          name: "起始页",
-          url: "https://nav.imsyy.top/",
-        },
-        {
-          icon: "/images/logo/logo.webp",
-          name: "今日热榜",
-          url: "https://hot.imsyy.top/",
-        },
-        {
-          icon: "/images/logo/logo.webp",
-          name: "站点监测",
-          url: "https://status.imsyy.top/",
-        },
-      ],
-    },
-    {
-      name: "项目",
-      list: [
-        {
-          icon: "/images/logo/logo.webp",
-          name: "Curve",
-          url: "https://github.com/imsyy/vitepress-theme-curve",
-        },
-        {
-          icon: "/images/logo/logo.webp",
-          name: "SPlayer",
-          url: "https://github.com/imsyy/SPlayer",
-        },
-        {
-          icon: "/images/logo/logo.webp",
-          name: "Snavigation",
-          url: "https://github.com/imsyy/SPlayer",
-        },
-        {
-          icon: "/images/logo/logo.webp",
-          name: "Home",
-          url: "https://github.com/imsyy/home",
-        },
-        {
-          icon: "/images/logo/logo.webp",
-          name: "DailyHotApi",
-          url: "https://github.com/imsyy/DailyHotApi",
-        },
-        {
-          icon: "/images/logo/logo.webp",
-          name: "site-status",
-          url: "https://github.com/imsyy/site-status",
+          icon: "/images/logo/uni-plus.png",
+          name: "uni-plus",
+          url: "https://github.com/DaMaiCoding/uni-plus",
         },
       ],
     },
@@ -304,7 +254,7 @@ export const themeConfig = {
         items: [
           { text: "站点状态", link: "https://status.imsyy.top/", newTab: true },
           { text: "一个导航", link: "https://nav.imsyy.top/", newTab: true },
-          { text: "站点订阅", link: "https://blog.imsyy.top/rss.xml", newTab: true },
+          { text: "站点订阅", link: "https://damaicoding.fun/rss.xml", newTab: true },
           {
             text: "反馈投诉",
             link: "https://eqnxweimkr5.feishu.cn/share/base/form/shrcnCXCPmxCKKJYI3RKUfefJre",
@@ -316,10 +266,10 @@ export const themeConfig = {
   },
   // 评论
   comment: {
-    enable: false,
+    enable: true,
     // 评论系统选择
     // artalk / twikoo
-    type: "artalk",
+    type: "twikoo",
     // artalk
     // https://artalk.js.org/
     artalk: {
@@ -331,9 +281,9 @@ export const themeConfig = {
     twikoo: {
       // 必填，若不想使用 CDN，可以使用 pnpm add twikoo 安装并引入
       js: "https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/twikoo/1.6.39/twikoo.all.min.js",
-      envId: "",
+      envId: "https://damaicoding.netlify.app/.netlify/functions/twikoo",
       // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
-      region: "ap-shanghai",
+      // region: "ap-shanghai",
       lang: "zh-CN",
     },
   },

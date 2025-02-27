@@ -1,5 +1,7 @@
 <template>
-  <div ref="commentRef" id="comment-dom" :class="['comment-content', 'twikoo', { fill }]" />
+  <div class="comment">
+    <div ref="commentRef" id="comment-dom" :class="['comment-content', 'twikoo', { fill }]" />
+  </div>
 </template>
 
 <script setup>
@@ -58,3 +60,14 @@ onMounted(() => {
   initTwikoo();
 });
 </script>
+
+<style lang="scss" scoped>
+.comment {
+  margin-top: 0 !important;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--main-card-background);
+  border: 1px solid var(--main-card-border);
+  box-shadow: 0 8px 16px -4px var(--main-border-shadow);
+}
+</style>
