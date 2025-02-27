@@ -24,7 +24,7 @@ export const generateId = (fileName) => {
 export const loadScript = (src, option = {}) => {
   if (typeof document === "undefined" || !src) return false;
   // 获取配置
-  const { async = false, reload = false, callback } = option;
+  const { async = false, reload = false, key, callback } = option;
   // 检查是否已经加载过此脚本
   const existingScript = document.querySelector(`script[src="${src}"]`);
   if (existingScript) {
@@ -39,6 +39,9 @@ export const loadScript = (src, option = {}) => {
   return new Promise((resolve, reject) => {
     const script = document.createElement("script");
     script.src = src;
+    if (key) {
+      script.setAttribute("data-website-id", key);
+    }
     if (async) script.async = true;
     script.onload = () => {
       resolve(script);

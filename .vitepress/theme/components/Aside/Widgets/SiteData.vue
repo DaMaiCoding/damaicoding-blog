@@ -39,10 +39,18 @@
 </template>
 
 <script setup>
+import { loadScript } from "@/utils/commonTools";
 import { daysFromNow } from "@/utils/helper";
 
 const { theme } = useData();
 
+onMounted(() => {
+  loadScript("https://cloud.umami.is/script.js", {
+    key: "e2f8a363-b49a-49e7-8bcf-e3f11e1b2995",
+    async: true,
+    reload: true,
+  });
+});
 </script>
 
 <style lang="scss" scoped>
