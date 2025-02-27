@@ -206,7 +206,7 @@ const statisticsData = ref(null);
 
 // 获取站点统计数据
 const getStatisticsData = async () => {
-  const result = await getStatistics(theme.value.tongji["51la"]);
+  const result = await getStatistics();
   statisticsData.value = result;
 };
 

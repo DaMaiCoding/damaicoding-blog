@@ -41,24 +41,18 @@
 <script setup>
 import { loadScript } from "@/utils/commonTools";
 import { daysFromNow } from "@/utils/helper";
+import { getUmamiData } from "@/api";
 
 const { theme } = useData();
 
 /* 登录 umami */
 const umamiData = ref();
-const getUmamiData = async () => {
-  const res = await fetch("https://us.umami.is/api/websites/e2f8a363-b49a-49e7-8bcf-e3f11e1b2995/stats?startAt=1740574800000&endAt=4106808823000&unit=hour&timezone=Asia%2FShanghai&compare=false", {
-    method: "GET",
-    headers: {
-      "Authorization": "Basic " + "7GQgpkMyQMZHRhNQUNFSFbVgwgIsUr3tAq2QKqoxBMDiCwyee6rugEvFMo9hyLV3FJmyy1FD3QwG62TOgMujs94F/BZQv6mNAALkqTxdu2NNYtsqdvFNgBhcaOGrzR7UW1croTtRn8/LXyKvbPcGiOxORSA3Y0AELyAwXQtfpLQGi7NCaeTyBPJYz0BLP3CzlkeFuUgZ2RX2owb4oIEn37L0sabdTjh8T8VMGg2+e16BZnqitocJPg4J8ijdqrJ24j1VI5XhsU/0nrGesEdqmI4aYIgIfFTKIDdmrx9p4HAZjn6erj+6E5Om4Je7vlFvgaC7msUP6jAH0xPJn8hqvpXLPkZ6Ocl5xCGF1Q==",
-    },
-  });
-  const data = await res.json();
-  umamiData.value = data;
+const getUmami = async () => {
+  umamiData.value = await getUmamiData()
 }
 
 onMounted(() => {
-  getUmamiData()
+  getUmami()
   loadScript("https://cloud.umami.is/script.js", {
     key: "e2f8a363-b49a-49e7-8bcf-e3f11e1b2995",
     async: true,

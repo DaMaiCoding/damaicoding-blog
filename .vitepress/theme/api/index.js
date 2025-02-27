@@ -65,29 +65,33 @@ export const getMusicList = async (url, id, server = "netease", type = "playlist
 };
 
 /**
+ * 获取 umami 统计数据
+ */
+export const getUmamiData = async () => {
+  const { theme } = useData();
+  const { key, startAt, endAt, token } = theme.value.umami;
+  const res = await fetch(
+    `https://us.umami.is/api/websites/${key}/stats?startAt=${startAt}&endAt=${endAt}&unit=hour&timezone=Asia%2FShanghai&compare=false`,
+    {
+      method: "GET",
+      headers: {
+        Authorization: "Basic " + token,
+      },
+    },
+  );
+  return await res.json();
+};
+
+/**
  * 站点统计数据
  */
-export const getStatistics = async (key) => {
-  const result = await fetch(`https://v6-widget.51.la/v6/${key}/quote.js`);
-  const title = [
-    "最近活跃",
-    "今日人数",
-    "今日访问",
-    "昨日人数",
-    "昨日访问",
-    "本月访问",
-    "总访问量",
-  ];
-  const data = await result.text();
-  let num = data.match(/(<\/span><span>).*?(\/span><\/p>)/g);
-  num = num.map((el) => {
-    const val = el.replace(/(<\/span><span>)/g, "");
-    return val.replace(/(<\/span><\/p>)/g, "");
-  });
-  const statistics = {};
-  for (let i = 0; i < num.length; i++) {
-    if (i === num.length - 1) continue;
-    statistics[title[i]] = num[i];
-  }
+export const getStatistics = async () => {
+  const data = await getUmamiData();
+  const statistics = {
+    总访问页数: data?.pageviews?.value || 0,
+    总访问量: data?.visits?.value || 0,
+    总访问人数: data?.visitors?.value || 0,
+    跳出率: ((1 - data?.visitors?.value / data?.visits?.value)*100 || 0) + "%",
+  };
   return statistics;
 };
