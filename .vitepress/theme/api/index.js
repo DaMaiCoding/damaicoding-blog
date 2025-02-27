@@ -75,7 +75,7 @@ export const getUmamiData = async () => {
     {
       method: "GET",
       headers: {
-        Authorization: "Basic " + token,
+        Authorization: "Bearer " + token,
       },
     },
   );
