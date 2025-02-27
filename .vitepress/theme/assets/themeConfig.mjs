@@ -128,15 +128,11 @@ export const themeConfig = {
     },
     {
       text: "友链",
-      items: [
-        { text: "友情链接", link: "/pages/link", icon: "people" },
-      ],
+      items: [{ text: "友情链接", link: "/pages/link", icon: "people" }],
     },
     {
       text: "我的",
-      items: [
-        { text: "关于本站", link: "/pages/about", icon: "contacts" },
-      ],
+      items: [{ text: "关于本站", link: "/pages/about", icon: "contacts" }],
     },
   ],
   // 导航栏菜单 - 左侧
@@ -169,7 +165,7 @@ export const themeConfig = {
     // 是否开启封面显示
     showCover: {
       // 是否开启封面显示 文章不设置cover封面会显示异常，可以设置下方默认封面
-      enable: true,
+      enable: false,
       // 封面布局方式: left | right | both
       coverLayout: "both",
       // 默认封面(随机展示)
@@ -348,9 +344,9 @@ export const themeConfig = {
   rewardData: {
     enable: true,
     // 微信二维码
-    wechat: "https://pic.efefee.cn/uploads/2024/04/07/66121049d1e80.webp",
+    wechat: "/images/reward/WeChat.png",
     // 支付宝二维码
-    alipay: "https://pic.efefee.cn/uploads/2024/04/07/661206631d3b5.webp",
+    alipay: "/images/reward/Alipay.jpg",
   },
   // 图片灯箱
   fancybox: {
