@@ -1,18 +1,15 @@
 <template>
   <div class="project">
-    <Banner type="page" title="我的项目" desc="源于热爱开发优秀的作品" footer="写 BUG 小能手" image="/images/common/bug.webp">
-      <template #footer-slot>
-        <a class="to-github" href="https://github.com/DaMaiCoding" target="_blank">
-          <i class="iconfont icon-github"></i>
-          <span>前往 Github</span>
-        </a>
-      </template>
+    <Banner type="page" title="效率工具" desc="开发生产力" footer="你有这么高速运转的机械进入中国，就看看下面的内容吧" image="/images/common/tools.png">
     </Banner>
+    <!-- 友链数据 -->
+    <LinkList :listData="linkData" :useFriendsLink="true" />
   </div>
 </template>
 
 <script setup>
 import Banner from "@/components/Banner.vue";
+import linkData from "@/assets/linkDataTools.mjs";
 </script>
 
 <style lang="scss" scoped>
@@ -31,13 +28,16 @@ import Banner from "@/components/Banner.vue";
       transition:
         color 0.3s,
         background-color 0.3s;
+
       .iconfont {
         margin-right: 8px;
         transition: color 0.3s;
       }
+
       &:hover {
         color: var(--main-card-background);
         background-color: var(--main-color);
+
         .iconfont {
           color: var(--main-card-background) !important;
         }
