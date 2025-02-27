@@ -8,37 +8,37 @@ const linkData = [
     typeList: [
       {
         name: "阮一峰",
-        avatar: "/public/images/common/ruan.webp",
+        avatar: "/images/common/ruan.webp",
         desc: "阮老师，知名博主，大佬中的大佬",
         url: "https://www.ruanyifeng.com/blog/",
       },
       {
         name: "张洪 Heo",
-        avatar: "/public/images/common/hong.webp",
+        avatar: "/images/common/hong.webp",
         desc: "产品设计师，独立开发者，设计与科技分享",
         url: "https://blog.zhheo.com/",
       },
       {
         name: "杜老师说",
-        avatar: "/public/images/common/du.webp",
+        avatar: "/images/common/du.webp",
         desc: "高级网络工程师，网站技术运营总监，系统运维、架构设计以及优化专家",
         url: "https://dusays.com/",
       },
       {
         name: "XAOXUU",
-        avatar: "/public/images/common/xiao.webp",
+        avatar: "/images/common/xiao.webp",
         desc: "Hexo Stellar、Volantis 主题作者",
         url: "https://xaoxuu.com/",
       },
       {
         name: "风记星辰",
-        avatar: "/public/images/common/fen.webp",
+        avatar: "/images/common/fen.webp",
         desc: "有着非常优秀的设计与交互的博客",
         url: "https://www.thyuu.com/",
       },
       {
         name: "DIYgod",
-        avatar: "/public/images/common/di.gif",
+        avatar: "/images/common/di.gif",
         desc: "写代码是热爱，写到世界充满爱！",
         url: "https://diygod.cc/",
       },
@@ -52,7 +52,7 @@ const linkData = [
     typeList: [
       {
         name: "DaMaiCoding",
-        avatar: "/public/images/common/index.png",
+        avatar: "/images/common/index.png",
         desc: "分享技术与科技生活",
         url: "https://github.com/DaMaiCoding",
       },
