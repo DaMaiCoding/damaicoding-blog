@@ -84,15 +84,15 @@
           </div>
           <div class="image-desc opacity">
             <span class="left">
-              统计信息来自 <a href="https://v6.51.la/" target="_blank">51la</a>
+              统计信息来自 <a href="https://us.umami.is/websites/e2f8a363-b49a-49e7-8bcf-e3f11e1b2995"
+                target="_blank">umami</a>
             </span>
           </div>
         </div>
       </div>
       <!-- 信息 -->
       <div class="about-item child">
-        <div class="about-item map image"
-          style="background-image: url(/images/common/map.jpg)">
+        <div class="about-item map image" style="background-image: url(/images/common/map.jpg)">
           <span class="position">我现在住在 <strong>中国，广东省</strong></span>
         </div>
         <div class="about-item info">

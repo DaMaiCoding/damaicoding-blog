@@ -25,14 +25,14 @@
           <i class="iconfont icon-visibility"></i>
           总访问量
         </span>
-        <span class="num" id="busuanzi_value_site_pv">{{ pageviews }}</span>
+        <span class="num" id="busuanzi_value_site_pv">{{ umamiData?.pageviews?.value }}</span>
       </div>
       <div class="data-item">
         <span class="name">
           <i class="iconfont icon-account"></i>
           总访客数
         </span>
-        <span class="num" id="busuanzi_value_site_uv">{{ active }}</span>
+        <span class="num" id="busuanzi_value_site_uv">{{ umamiData?.visitors?.value }}</span>
       </div>
     </div>
   </div>
@@ -43,40 +43,22 @@ import { loadScript } from "@/utils/commonTools";
 import { daysFromNow } from "@/utils/helper";
 
 const { theme } = useData();
-const loginUmamiData = {
-  email:"1351123861@qq.com",
-  password:"Lin5426461"
-}
 
 /* 登录 umami */
-const active = ref(0);
-const getUmamiActive = async () => {
-  const res = await fetch("https://us.umami.is/api/websites/e2f8a363-b49a-49e7-8bcf-e3f11e1b2995/active", {
+const umamiData = ref();
+const getUmamiData = async () => {
+  const res = await fetch("https://us.umami.is/api/websites/e2f8a363-b49a-49e7-8bcf-e3f11e1b2995/stats?startAt=1740574800000&endAt=4106808823000&unit=hour&timezone=Asia%2FShanghai&compare=false", {
     method: "GET",
     headers: {
       "Authorization": "Basic " + "7GQgpkMyQMZHRhNQUNFSFbVgwgIsUr3tAq2QKqoxBMDiCwyee6rugEvFMo9hyLV3FJmyy1FD3QwG62TOgMujs94F/BZQv6mNAALkqTxdu2NNYtsqdvFNgBhcaOGrzR7UW1croTtRn8/LXyKvbPcGiOxORSA3Y0AELyAwXQtfpLQGi7NCaeTyBPJYz0BLP3CzlkeFuUgZ2RX2owb4oIEn37L0sabdTjh8T8VMGg2+e16BZnqitocJPg4J8ijdqrJ24j1VI5XhsU/0nrGesEdqmI4aYIgIfFTKIDdmrx9p4HAZjn6erj+6E5Om4Je7vlFvgaC7msUP6jAH0xPJn8hqvpXLPkZ6Ocl5xCGF1Q==",
     },
   });
   const data = await res.json();
-  active.value = data.visitors
+  umamiData.value = data;
 }
 
-// const pageviews = ref(0)
-// const getUmamiPageviews = async () => {
-//   const res = await fetch("https://us.umami.is/api/websites/e2f8a363-b49a-49e7-8bcf-e3f11e1b2995/pageviews", {
-//     method: "GET",
-//     headers: {
-//       "Authorization" : "Basic " + "7GQgpkMyQMZHRhNQUNFSFbVgwgIsUr3tAq2QKqoxBMDiCwyee6rugEvFMo9hyLV3FJmyy1FD3QwG62TOgMujs94F/BZQv6mNAALkqTxdu2NNYtsqdvFNgBhcaOGrzR7UW1croTtRn8/LXyKvbPcGiOxORSA3Y0AELyAwXQtfpLQGi7NCaeTyBPJYz0BLP3CzlkeFuUgZ2RX2owb4oIEn37L0sabdTjh8T8VMGg2+e16BZnqitocJPg4J8ijdqrJ24j1VI5XhsU/0nrGesEdqmI4aYIgIfFTKIDdmrx9p4HAZjn6erj+6E5Om4Je7vlFvgaC7msUP6jAH0xPJn8hqvpXLPkZ6Ocl5xCGF1Q==",
-//     }
-//   });
-//   const data = await res.json();
-//   console.log('🚀 ~ getUmamiPageviews ~ data:', data)
-//   pageviews.value = data.pageviews
-// }
-
 onMounted(() => {
-  getUmamiActive()
-  // getUmamiPageviews()
+  getUmamiData()
   loadScript("https://cloud.umami.is/script.js", {
     key: "e2f8a363-b49a-49e7-8bcf-e3f11e1b2995",
     async: true,
