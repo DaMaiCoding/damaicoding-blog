@@ -106,6 +106,14 @@ export const themeConfig = {
           crossorigin: "",
         },
       ],
+      // umami analytics
+      [
+        "script",
+        {
+          src: "https://cloud.umami.is/script.js",
+          "data-website-id": "api_GuTuk7SSGwdRpascEjqCZALnYlN4PEh2",
+        },
+      ],
     ],
   },
   // 导航栏菜单
@@ -182,11 +190,11 @@ export const themeConfig = {
     social: [
       {
         icon: "email",
-        link: "mailto:one@imsyy.top",
+        link: "mailto:damaicoding@qq.com",
       },
       {
         icon: "github",
-        link: "https://www.github.com/imsyy/",
+        link: "https://github.com/DaMaiCoding",
       },
       {
         icon: "telegram",
