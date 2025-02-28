@@ -5,7 +5,9 @@ description: 解决浏览器能正常上网，但是无法下载软件，显示�
 date: 2023-03-22 17:12:00
 tags: [技术分享,基础调试库下载失败,bug]
 categories: [技术分享]
-cover: ''
+references:
+  - title: vitepress-theme-curve
+    url: https://github.com/imsyy/vitepress-theme-curve
 ---
 
 > [!TIP]

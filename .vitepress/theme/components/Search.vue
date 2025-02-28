@@ -1,32 +1,18 @@
 <!-- 全局搜索 -->
 <template>
-  <Modal
-    :show="store.searchShow"
-    title="全局搜索"
-    titleIcon="search"
-    @mask-click="store.changeShowStatus('searchShow')"
-    @modal-close="store.changeShowStatus('searchShow')"
-  >
-    <ais-instant-search
-      :search-client="searchClient"
-      :future="{
+  <Modal :show="store.searchShow" title="全局搜索" titleIcon="search" @mask-click="store.changeShowStatus('searchShow')"
+    @modal-close="store.changeShowStatus('searchShow')">
+    <ais-instant-search :search-client="searchClient" :future="{
         preserveSharedStateOnUnmount: true,
-      }"
-      index-name="imsyy"
-      @state-change="searchChange"
-    >
+      }" index-name="damaicoding_fun_e0fwi2j9rh_pages" @state-change="searchChange">
       <ais-configure :hits-per-page.camel="8" />
       <ais-search-box placeholder="想要搜点什么" autofocus />
       <ais-hits v-if="hasSearchValue">
         <template v-slot="{ items }">
           <Transition name="fade" mode="out-in">
             <div v-if="formatSearchData(items)?.length" class="search-list">
-              <div
-                v-for="(item, index) in formatSearchData(items)"
-                :key="index"
-                class="search-item s-card hover"
-                @click="jumpSearch(item.url)"
-              >
+              <div v-for="(item, index) in formatSearchData(items)" :key="index" class="search-item s-card hover"
+                @click="jumpSearch(item.url)">
                 <p class="title" v-html="item.title" />
                 <p v-if="item?.anchor" class="anchor" v-html="item.anchor" />
                 <p v-if="item?.content" class="content s-card" v-html="item.content" />
