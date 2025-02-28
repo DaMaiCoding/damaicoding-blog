@@ -25,14 +25,14 @@
           <i class="iconfont icon-visibility"></i>
           总访问量
         </span>
-        <span class="num" id="busuanzi_value_site_pv">{{ umamiData?.pageviews?.value }}</span>
+        <span class="num" id="busuanzi_value_site_pv">{{ umamiData?.pageviews?.value ?? 0 }}</span>
       </div>
       <div class="data-item">
         <span class="name">
           <i class="iconfont icon-account"></i>
           总访客数
         </span>
-        <span class="num" id="busuanzi_value_site_uv">{{ umamiData?.visitors?.value }}</span>
+        <span class="num" id="busuanzi_value_site_uv">{{ umamiData?.visitors?.value ?? 0 }}</span>
       </div>
     </div>
   </div>
@@ -53,8 +53,8 @@ const getUmami = async () => {
 
 onMounted(() => {
   getUmami()
-  loadScript("https://cloud.umami.is/script.js", {
-    key: "e2f8a363-b49a-49e7-8bcf-e3f11e1b2995",
+  loadScript(`${theme.value.umami.url}/random-string.js`, {
+    key: theme.value.umami.key,
     async: true,
     reload: true,
   });

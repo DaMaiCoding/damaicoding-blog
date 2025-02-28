@@ -379,10 +379,11 @@ export const themeConfig = {
   },
   // 站点统计
   umami: {
-    key: "e2f8a363-b49a-49e7-8bcf-e3f11e1b2995",
+    url: "https://umami.mengwu.top",
+    key: "9106352b-f12e-4185-9e97-1f246dfffec6",
     startAt: "1740574800000",
     endAt: "4106808823000",
     token:
-      "7GQgpkMyQMZHRhNQUNFSFbVgwgIsUr3tAq2QKqoxBMDiCwyee6rugEvFMo9hyLV3FJmyy1FD3QwG62TOgMujs94F/BZQv6mNAALkqTxdu2NNYtsqdvFNgBhcaOGrzR7UW1croTtRn8/LXyKvbPcGiOxORSA3Y0AELyAwXQtfpLQGi7NCaeTyBPJYz0BLP3CzlkeFuUgZ2RX2owb4oIEn37L0sabdTjh8T8VMGg2+e16BZnqitocJPg4J8ijdqrJ24j1VI5XhsU/0nrGesEdqmI4aYIgIfFTKIDdmrx9p4HAZjn6erj+6E5Om4Je7vlFvgaC7msUP6jAH0xPJn8hqvpXLPkZ6Ocl5xCGF1Q==",
+      "USLOcSejw5EP7WlZypHbXh511IdsryNFPSTQOfukriWIKRYzv9+WC0qMShAOcz8nAYAK7LzTzXzZaB8f2yQvzsLq//jfGQHs9nwTeD2Yyjvo6YHjhrKZayZ+DakRUGwzSnntACdBGlXW1ncZiMpKWLkZ7WaihbB3rllG2GPQ1IUb9bAbZnA+OrkdAQi87Bij9AFJ7v/3i41l5tpLB8Vz90Qd/3a3Das7VE/zYVOObg+lv5vIlJ4KWWMM4uDtTFqUNqbKe+/8bJbmxHJMMoJH1W6xbJRIFVCseJ/LYCcrVou43sCE+qJ/OC1ukeptStDtdouqI0hSl67vTKRpDdo6L9F/FEaLDZHci6BYHZ7T0IYa+GCrYNoZ1ofDs9sr",
   },
 };

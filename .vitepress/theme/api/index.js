@@ -71,7 +71,7 @@ export const getUmamiData = async () => {
   const { theme } = useData();
   const { key, startAt, endAt, token } = theme.value.umami;
   const res = await fetch(
-    `https://us.umami.is/api/websites/${key}/stats?startAt=${startAt}&endAt=${endAt}&unit=hour&timezone=Asia%2FShanghai&compare=false`,
+    `${theme.value.umami.url}/api/websites/${key}/stats?startAt=${startAt}&endAt=${endAt}&unit=hour&timezone=Asia%2FShanghai&compare=false`,
     {
       method: "GET",
       headers: {
