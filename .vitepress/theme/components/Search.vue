@@ -4,7 +4,7 @@
     @modal-close="store.changeShowStatus('searchShow')">
     <ais-instant-search :search-client="searchClient" :future="{
         preserveSharedStateOnUnmount: true,
-      }" index-name="damaicoding_fun_e0fwi2j9rh_pages" @state-change="searchChange">
+      }" index-name="crawler_damaicoding" @state-change="searchChange">
       <ais-configure :hits-per-page.camel="8" />
       <ais-search-box placeholder="想要搜点什么" autofocus />
       <ais-hits v-if="hasSearchValue">
