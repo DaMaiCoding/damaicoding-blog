@@ -219,10 +219,13 @@ export const themeConfig = {
       {
         text: "项目",
         items: [
-          { text: "Home", link: "https://github.com/imsyy/home/", newTab: true },
-          { text: "SPlayer", link: "https://github.com/imsyy/SPlayer/", newTab: true },
-          { text: "DailyHotApi", link: "https://github.com/imsyy/DailyHotApi/", newTab: true },
-          { text: "Snavigation", link: "https://github.com/imsyy/Snavigation/", newTab: true },
+          { text: "Home", link: "https://github.com/DaMaiCoding", newTab: true },
+          { text: "UniPlus", link: "https://github.com/DaMaiCoding/uni-plus", newTab: true },
+          {
+            text: "CreateCli",
+            link: "https://github.com/DaMaiCoding/create-uni-plus",
+            newTab: true,
+          },
         ],
       },
       {
@@ -236,7 +239,6 @@ export const themeConfig = {
       {
         text: "页面",
         items: [
-          { text: "畅所欲言", link: "/pages/message" },
           { text: "关于本站", link: "/pages/about" },
           { text: "隐私政策", link: "/pages/privacy" },
           { text: "版权协议", link: "/pages/cc" },
@@ -245,14 +247,12 @@ export const themeConfig = {
       {
         text: "服务",
         items: [
-          { text: "站点状态", link: "https://status.imsyy.top/", newTab: true },
-          { text: "一个导航", link: "https://nav.imsyy.top/", newTab: true },
-          { text: "站点订阅", link: "https://damaicoding.fun/rss.xml", newTab: true },
           {
-            text: "反馈投诉",
-            link: "https://eqnxweimkr5.feishu.cn/share/base/form/shrcnCXCPmxCKKJYI3RKUfefJre",
+            text: "站点统计",
+            link: "https://umami.mengwu.top/share/0Jz4B4GRTTnnCay3/damaicoding.fun",
             newTab: true,
           },
+          { text: "站点订阅", link: "https://damaicoding.fun/rss.xml", newTab: true },
         ],
       },
     ],
