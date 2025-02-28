@@ -141,7 +141,7 @@ export const themeConfig = {
       name: "博客",
       list: [
         {
-          icon: "/images/common/index.png",
+          icon: "/images/logo/index.png",
           name: "主站",
           url: "/",
         },
