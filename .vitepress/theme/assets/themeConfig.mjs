@@ -189,20 +189,12 @@ export const themeConfig = {
         link: "https://github.com/DaMaiCoding",
       },
       {
-        icon: "telegram",
-        link: "https://t.me/bottom_user",
-      },
-      {
         icon: "bilibili",
-        link: "https://space.bilibili.com/98544142",
+        link: "https://space.bilibili.com/276646328",
       },
       {
         icon: "qq",
-        link: "https://res.abeim.cn/api/qq/?qq=1539250352",
-      },
-      {
-        icon: "twitter-x",
-        link: "https://twitter.com/iimmsyy",
+        link: "https://res.abeim.cn/api/qq/?qq=1351123861",
       },
     ],
     // sitemap
