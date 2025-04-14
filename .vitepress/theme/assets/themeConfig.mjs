@@ -317,7 +317,7 @@ export const themeConfig = {
   music: {
     enable: true,
     // url
-    url: "https://meting-dd.2333332.xyz/api",
+    url: "https://meting-api-omega.vercel.app/api",
     // id
     id: 9379831714,
     // netease / tencent / kugou
